@@ -3,10 +3,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../../models/shop_app/login_model.dart';
 import '../../../../models/social_app/social_user_model.dart';
-import '../../../../modules/shop_app/login/cubit/states.dart';
-import '../../../../modules/shop_app/register/cubit/states.dart';
+
 import '../../../../modules/social_app/social_register/cubit/states.dart';
 import '../../../../shared/network/end_points.dart';
 import '../../../../shared/network/remote/dio_helper.dart';

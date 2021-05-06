@@ -13,7 +13,6 @@
 import 'package:socialmediaapp/layout/social_app/cubit/cubit.dart';
 import 'package:socialmediaapp/modules/social_app/social_login/social_login_screen.dart';
 
-import '../../modules/shop_app/login/shop_login_screen.dart';
 import '../../shared/components/components.dart';
 import '../../shared/network/local/cache_helper.dart';
 

@@ -6,7 +6,6 @@ import 'package:socialmediaapp/layout/social_app/cubit/cubit.dart';
 import 'package:socialmediaapp/layout/social_app/cubit/states.dart';
 import 'package:socialmediaapp/models/social_app/message_model.dart';
 import 'package:socialmediaapp/models/social_app/social_user_model.dart';
-import 'package:socialmediaapp/shared/cubit/cubit.dart';
 import 'package:socialmediaapp/shared/styles/colors.dart';
 import 'package:socialmediaapp/shared/styles/icon_broken.dart';
 
