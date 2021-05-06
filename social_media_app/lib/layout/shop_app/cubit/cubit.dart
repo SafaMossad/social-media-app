@@ -2,19 +2,20 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:socialmediaapp/models/models_shop_app/change_favorite_model.dart';
-import '../../../models/models_shop_app/categories_model.dart';
-import '../../../models/models_shop_app/favorites_model.dart';
-import '../../../models/models_shop_app/home_model.dart';
-import '../../../models/models_shop_app/login_model.dart';
-import '../../../modules/shop_app/on_boarding/categories/categories_screen.dart';
-import '../../../modules/shop_app/on_boarding/favorite/favorites_screen.dart';
-import '../../../modules/shop_app/on_boarding/products/products_screen.dart';
-import '../../../modules/shop_app/on_boarding/settings/settings_screen.dart';
-import '../../../shared/components/constants.dart';
-import '../../../shared/network/remote/dio_helper.dart';
-import '../../../shared/network/remote/end_point.dart';
 import '../../../layout/shop_app/cubit/states.dart';
+import '../../../models/shop_app/categories_model.dart';
+import '../../../models/shop_app/change_favorites_model.dart';
+import '../../../models/shop_app/favorites_model.dart';
+import '../../../models/shop_app/home_model.dart';
+import '../../../models/shop_app/login_model.dart';
+import '../../../modules/shop_app/cateogries/categories_screen.dart';
+import '../../../modules/shop_app/favorites/favorites_screen.dart';
+import '../../../modules/shop_app/login/cubit/cubit.dart';
+import '../../../modules/shop_app/products/products_screen.dart';
+import '../../../modules/shop_app/settings/settings_screen.dart';
+import '../../../shared/components/constants.dart';
+import '../../../shared/network/end_points.dart';
+import '../../../shared/network/remote/dio_helper.dart';
 
 class ShopCubit extends Cubit<ShopStates> {
   ShopCubit() : super(ShopInitialState());
@@ -107,7 +108,7 @@ class ShopCubit extends Cubit<ShopStates> {
       emit(ShopSuccessChangeFavoritesState(changeFavoritesModel));
     }).catchError((error) {
       favorites[productId] = !favorites[productId];
-      print("error is: ${error.toString()}");
+
       emit(ShopErrorChangeFavoritesState());
     });
   }

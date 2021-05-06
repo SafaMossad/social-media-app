@@ -40,11 +40,15 @@ dependencies:
   smooth_page_indicator: ^0.2.3
   fluttertoast: ^8.0.6
   carousel_slider: ^3.0.0
+  image_picker: ^0.7.4
 
   #FireBase
   firebase_core: ^1.1.0
   firebase_auth: ^1.1.2
   cloud_firestore: ^1.0.7
+
+  #firebase Storage
+  firebase_storage: ^8.0.5
 
 dev_dependencies:
   flutter_test:
@@ -81,6 +85,9 @@ flutter:
     - family: Jannah
       fonts:
         - asset: assets/fonts/jannah.ttf
+    - family: IconBroken
+      fonts:
+        - asset: assets/fonts/icons.ttf
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

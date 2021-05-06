@@ -5,8 +5,6 @@ import 'package:intl/intl.dart';
 import '../../shared/components/components.dart';
 import '../../shared/cubit/cubit.dart';
 import '../../shared/cubit/states.dart';
-import 'package:sqflite/sqflite.dart';
-
 
 // 1. create database
 // 2. create tables
